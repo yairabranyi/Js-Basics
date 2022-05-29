@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/JS Basics/String/strings.js"></script>
+</head>
+
+
+
+<body>
+    <h1>String operations</h1>
+    <h2>Getting the Length of a String</h2>
+
+    <input id="textInput" onkeyup="handleTextInputChange(this)" type="text" placeholder="Type your string"></input>
+    <br />
+    <label>string Length: </label>
+    <span id="stringLengthRes">"0"</span><br />
+    <hr />
+
+    <h2>Finding a String Inside Another String- indexOf() lastIndexOf()</h2>
+    <span>Concider the text: </span><span id="text2">"If the facts don't fit the theory, change the facts."
+    </span><br />
+    <input id="textToFined" type="text" placeholder="Type your searched text"></input>
+    <button onclick="searchText()">Search</button><br />
+    <span id="showRes"></span>
+    <hr />
+
+    <h2>Extracting a Substring from a String by: str.slice(startIndex, endIndex)</h2>
+    <span>"The quick brown fox jumps over the lazy dog."</span>
+    
+</body>
+
+</html>

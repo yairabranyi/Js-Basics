@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT BASIC</title>
+    <script src="/JS Basics/Events/index.js"></script>
+</head>
+
+<body onload="onloadHandler()">
+
+    <h1>JAVASCRIPT \t BASIC</h1>
+    <pre>This is a &ltpre>  tag that 
+        show the text context  as writen</pre>
+    <p id="mark">This is a paragraph of text.</p>
+    <p class="p1">This paragraph 1 of text.</p>
+    <p class="p1">This paragraph 2 of text.</p>
+    <p class="p1">This paragraph 3 of text.</p>
+    <p>This paragraph 4 of text.</p>
+    <ul>
+        <li>Bread</li>
+        <li class="tick">Coffee</li>
+        <li>Pineapple Cake</li>
+    </ul>
+
+    <hr />
+    <h2>onclick</h2>
+
+    <button type="button" id="myBtn1" onclick="sayHello()">On Click Event</button> <br />
+    <hr />
+
+    <h2>oncontextmenu- mouse right Click</h2>
+    <button type="button" id="myBtn2" oncontextmenu="onContextMenuaHandler()">On Context
+        menu</button><br />
+    <hr />
+        \n
+    <h2>onmouseout</h2>
+    <button type="button" id="myBtn3" onmouseout="mouseMovedOut()">Place Mouse Inside Me and Move Out</button><br />
+    <hr />
+
+    <h2>onkeydown</h2>
+    <input type="text" onkeydown="KeyPrestDown(this)" placeholder="Press a key" /><br />
+    <hr />
+
+    <h2>onBlueHandler</h2>
+    <input type="text" onblur="onBlueHandler(this)" onfocus="OnFocusHndler(this)" placeholder="On focuse event" /><br />
+    
+    <hr />
+
+    <h2>onchange</h2>
+    <label for="cars">Choose a car:</label>
+    <select onchange="OnChangeHandler(this)">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+    </select>
+    <br />
+    <!-- onsubmit-The submit event only occurs when the user submits a form on a web page -->
+    <form onsubmit="console.log('Form data will be submitted to the server!')">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname">
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>
