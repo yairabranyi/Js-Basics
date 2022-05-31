@@ -20,7 +20,7 @@
     <label>string Length: </label>
     <span id="stringLengthRes">"0"</span><br />
     <hr />
-
+    
     <h2>Finding a String Inside Another String- indexOf() lastIndexOf()</h2>
     <span>Concider the text: </span><span id="text2">"If the facts don't fit the theory, change the facts."
     </span><br />
@@ -28,10 +28,19 @@
     <button onclick="searchText()">Search</button><br />
     <span id="showRes"></span>
     <hr />
-
-    <h2>Extracting a Substring from a String by: str.slice(startIndex, endIndex)</h2>
-    <span>"The quick brown fox jumps over the lazy dog."</span>
     
+    <h2>Extracting a Substring from a String by: str.slice(startIndex, endIndex)</h2>
+    <p id="textToBeSliced">"Try to Slice part of that text The quick brown fox jumps over the lazy dog."</p>
+    <input id="textStartPosition" onkeyup="getPosition(this)" type="number" placeholder="Type initial slicing position"></input>
+    <input id="textEndPosition" onkeyup="getPosition(this)" type="number" placeholder="Type end slicing position (optional)"> </input><br />
+    <button onclick="getSlice()" >Get sliced text</button><br />
+    
+    <input id="textToSearch" onkeyup="updateTextToSearch(this)" type="text" placeholder="Enter text to search"> </input><br />
+    <button onclick="getSearchedText()" >Get searched text</button><br />
+    <span id="clisedText" style="color:blue;text-align:center;font-weight: 1000;"  ></span><br />
+    
+
+
 </body>
 
 </html>
