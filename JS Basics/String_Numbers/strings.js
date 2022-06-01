@@ -70,7 +70,44 @@ var updateTextToSearch = (elm) => {
 
 var getSearchedText = () => {
     textToBeSliced
-    // var pos1 = str.search("color");
     clisedText.innerHTML=textToBeSliced.innerHTML.search(textToSearch)
     console.log("Searching test...",textToBeSliced.innerHTML)
+}
+
+// NUMBERS.............................................................................
+
+var getNumberToPars = () => {
+
+    // Getting the value to Parse
+    var numberToParse = document.getElementById('inputNumberToPars').value
+    console.log(`Parsing the frase: ${numberToParse}`)
+
+    //Paersing the value
+    var parsedValue = parseInt(numberToParse)
+    console.log(`The parsed Number is: ${parsedValue}`)
+    // console.log(document.getElementById('VALUE:').value)
+
+    //Show the result
+    document.getElementById('parsedResult').innerHTML = parsedValue
+
+}
+
+var getNumberToString = () => {
+    var numberToString = parseInt(document.getElementById('inputNumberToSering').value)
+    console.log("Number", typeof numberToString)
+    console.log("The extracted Number", numberToString)
+
+    //Geting the entered value 
+    numberToString = document.getElementById('inputNumberToSering').value
+
+    // console.log(`Extracting Number from string.... ${numberToString}`)
+
+    //Convert Number to String
+    var ConvertedString = numberToString.toString()
+    // console.log(`tHE string IS ${numberToString}`)
+    console.log("String", typeof ConvertedString)
+
+      //Show the result
+      document.getElementById("stringToNumberResult").innerHTML = ConvertedString
+
 }
