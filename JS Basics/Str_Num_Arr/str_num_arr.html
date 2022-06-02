@@ -7,6 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strings & Numbers</title>
     <script src="/JS Basics/Str_Num_Arr/str_num_arr.js"></script>
+    <style>
+        h1 {
+            color: red;
+        }
+
+        h2 {
+            color: blue;
+        }
+
+        /* p { color: red; } */
+    </style>
+
+    </style>
 </head>
 
 
@@ -20,7 +33,7 @@
     <label>string Length: </label>
     <span id="stringLengthRes">"0"</span><br />
     <hr />
-    
+
     <h2>Finding a String Inside Another String- indexOf() lastIndexOf()</h2>
     <span>Concider the text: </span><span id="text2">"If the facts don't fit the theory, change the facts."
     </span><br />
@@ -28,31 +41,48 @@
     <button onclick="searchText()">Search</button><br />
     <span id="showRes"></span>
     <hr />
-    
+
     <h2>Extracting a Substring from a String by: str.slice(startIndex, endIndex)</h2>
     <p id="textToBeSliced">"Try to Slice part of that text The quick brown fox jumps over the lazy dog."</p>
-    <input id="textStartPosition" onkeyup="getPosition(this)" type="number" placeholder="Type initial slicing position"></input>
-    <input id="textEndPosition" onkeyup="getPosition(this)" type="number" placeholder="Type end slicing position (optional)"> </input><br />
-    <button onclick="getSlice()" >Get sliced text</button><br />
-    
-    <input id="textToSearch" onkeyup="updateTextToSearch(this)" type="text" placeholder="Enter text to search"> </input><br />
-    <button onclick="getSearchedText()" >Get searched text</button><br />
-    <span id="clisedText" style="color:blue;text-align:center;font-weight: 1000;"  ></span><br />
-    
-     <hr/>
-     <hr/>
+    <input id="textStartPosition" onkeyup="getPosition(this)" type="number"
+        placeholder="Type initial slicing position"></input>
+    <input id="textEndPosition" onkeyup="getPosition(this)" type="number"
+        placeholder="Type end slicing position (optional)"> </input><br />
+    <button onclick="getSlice()">Get sliced text</button><br />
+
+    <input id="textToSearch" onkeyup="updateTextToSearch(this)" type="text" placeholder="Enter text to search">
+    </input><br />
+    <button onclick="getSearchedText()">Get searched text</button><br />
+    <span id="clisedText" style="color:blue;text-align:center;font-weight: 1000;"></span><br />
+
+    <hr />
+    <hr />
 
     <h1>Numbers operations</h1>
     <hr />
     <h2>Parsing Integers from Strings- parseInt()</h2>
     <input id="inputNumberToPars" onkeyup="getNumberToPars()" placeholder="Enter string to parse"> </input><br />
-    <h2 id="parsedResult"><span>Result: </span></h2>
+    <h3 id="parsedResult"><span>Result: </span></h3>
     <hr />
-    
+
     <h2>Converting Numbers to Strings- toString()</h2>
-    <input id="inputNumberToSering" onkeyup="getNumberToString()"  placeholder="Enter Number to string">  </input><br />
-    <h2 id="stringToNumberResult"><span>Result: </span></h2>
+    <input id="inputNumberToSering" onkeyup="getNumberToString()" placeholder="Enter Number to string"> </input><br />
+    <h3 id="stringToNumberResult"><span>Result: </span></h3>
     <hr />
+    <hr />
+
+    <h1>JavaScript Arrays</h1>
+    <h2>Get an Array Elements</h2>
+    <h3>Let's say we have the Array: <span style="background-color: rgb(148, 241, 148)">["Apple", "Banana", "Mango","Orange", "Papaya"]</span></h3>
+    <input id="arrItemNumber" onkeydown="getArrItem()" type="text" placeholder="Type item Num"></input>
+    <h3 id="displayArrItem"><span>Result: </span></h3>
+    <br />
+    
+    <h2>Looping Through Array Elements</h2>
+
+
+
+
 
 
 </body>

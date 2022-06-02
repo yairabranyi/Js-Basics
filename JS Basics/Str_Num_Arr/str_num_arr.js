@@ -64,14 +64,14 @@ var getSlice = () => {
 // Updating the requested text to search
 var updateTextToSearch = (elm) => {
     textToSearch = elm.value
-    console.log("Update text to search ",textToSearch)
+    console.log("Update text to search ", textToSearch)
 }
 
 
 var getSearchedText = () => {
     textToBeSliced
-    clisedText.innerHTML=textToBeSliced.innerHTML.search(textToSearch)
-    console.log("Searching test...",textToBeSliced.innerHTML)
+    clisedText.innerHTML = textToBeSliced.innerHTML.search(textToSearch)
+    console.log("Searching test...", textToBeSliced.innerHTML)
 }
 
 // NUMBERS.............................................................................
@@ -107,7 +107,28 @@ var getNumberToString = () => {
     // console.log(`tHE string IS ${numberToString}`)
     console.log("String", typeof ConvertedString)
 
-      //Show the result
-      document.getElementById("stringToNumberResult").innerHTML = ConvertedString
+    //Show the result
+    document.getElementById("stringToNumberResult").innerHTML = ConvertedString
 
 }
+// ARRAYS.............................................................................
+var fruits = ["Apple", "Banana", "Mango", "Orange", "Papaya"];
+
+//Get the requested array item
+var getArrItem = () => {
+    document.getElementById("displayArrItem").innerHTML = "<span>Result: </span>" + fruits[document.getElementById("arrItemNumber").value]
+    console.log("Getting Item")
+}
+
+// Looping Through Array Elements
+for (let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i]) ;
+    var item = document.createElement("h3")
+    var itemContent = document.createTextNode("fruits[i]")
+    item.innerHTML="itemContent"
+    // document.body.appendChild(item);
+    console.log(item) ;
+    
+}
+
+
